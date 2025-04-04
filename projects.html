@@ -18,23 +18,26 @@
   <body class="bg-neutral-900 text-neutral-100">
     <!-- Header -->
     <header class="w-full px-6 py-6 border-b border-neutral-800">
-      <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div
+        class="max-w-6xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+      >
+        <!-- Logo + Nome -->
         <div class="flex items-center gap-4">
           <img
-            src="assets/lucas.png"
+            src="/assets/lucas.png"
             alt="Profile"
             class="w-12 h-12 rounded-full shadow-md"
           />
           <h1 class="text-xl font-bold tracking-tight">LUCAS</h1>
         </div>
-        <nav class="space-x-6 text-sm font-semibold text-neutral-400">
-          <a href="index.html" class="hover:text-white">Home</a>
-          <a
-            href="projects.html"
-            class="border-b-2 border-blue-500 pb-1 text-white"
-            >Projects</a
-          >
-          <a href="contact.html" class="hover:text-white">Contact</a>
+
+        <!-- Navegação -->
+        <nav
+          class="flex flex-wrap justify-start sm:justify-end gap-4 text-sm font-semibold text-neutral-400"
+        >
+          <a href="/index.html" class="hover:text-white">Home</a>
+          <a href="/projects.html" class="hover:text-white">Projects</a>
+          <a href="/contact.html" class="hover:text-white">Contact</a>
         </nav>
       </div>
     </header>
