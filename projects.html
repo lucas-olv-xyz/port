@@ -3,62 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portfólio</title>
+    <title>Projetos | Lucas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Portfólio de Projetos</h1>
-    <div class="container">
-      <div class="card">
-        <div class="badge">
-          <img src="assets/js-icon.png" alt="JavaScript" />javascript
+  <body class="bg-gradient-to-b from-[#f4f8ff] to-white text-neutral-800">
+    <!-- Header -->
+    <header class="w-full px-6 py-6 border-b border-neutral-200">
+      <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <img
+            src="/assets/lucas.png"
+            alt="Perfil"
+            class="w-12 h-12 rounded-full shadow-md"
+          />
+          <h1 class="text-xl font-bold tracking-tight">LUCAS</h1>
         </div>
-        <h2>Extensão para Premiere Pro</h2>
-        <p>
-          Criei uma extensão em JavaScript que automatiza 80% do processo de
-          edição de conteúdo reaproveitado. Reduzi o tempo de edição de 15
-          minutos para 1:40, triplicando a produção de vídeos mensais.
-        </p>
-        <a href="projects/prextension.html">Saiba mais</a>
+        <nav class="space-x-6 text-sm font-semibold text-neutral-600">
+          <a href="index.html" class="hover:text-black">Home</a>
+          <a
+            href="projects.html"
+            class="border-b-2 border-blue-500 pb-1 text-black"
+            >Projects</a
+          >
+
+          <a href="/contact.html" class="hover:text-black">Contact</a>
+        </nav>
       </div>
-      <div class="card">
-        <div class="badge">
-          <img src="assets/react.png" alt="react" />react<img
-            src="assets/typescript.svg"
-            alt="TypeScript"
-          />typescript
+    </header>
+
+    <!-- Main Projects Section -->
+    <section class="max-w-6xl mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold mb-2">Projects</h2>
+      <p class="text-neutral-500 mb-12">Some of my spare time tinkering.</p>
+
+      <!-- Projeto 1 -->
+      <div class="flex flex-col md:flex-row items-start gap-10 mb-20">
+        <div
+          class="w-full md:w-1/2 min-w-[300px] aspect-video overflow-hidden rounded-xl shadow-md bg-black"
+        >
+          <img
+            src="/assets/ytcompt.png"
+            alt="YouTube Competitors Analyser"
+            class="w-full h-full object-cover"
+          />
         </div>
-        <h2>App de Monitoramento de Lives</h2>
-        <p>
-          Desenvolvi um aplicativo em Google Apps Script integrado ao Google
-          Sheets que monitora 20 lives simultâneas no YouTube, coleta métricas
-          automáticas e alerta quando uma live não atinge 50k views em 48 horas.
-        </p>
-        <a href="projects/lives.html" target="_blank">Ver detalhes</a>
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">
+            YouTube Competitors Analyser
+          </h3>
+          <p class="text-neutral-600 mb-4">
+            Uma aplicação que descobre concorrentes reais de um canal do
+            YouTube, coleta dados estratégicos (títulos, tags, visualizações) e
+            gera listas inteligentes de tags. Criada com foco em performance e
+            scraping confiável.
+          </p>
+          <ul class="text-sm text-neutral-500 mb-6 space-y-1">
+            <li>• Node.js + Puppeteer</li>
+            <li>• Geração de CSVs automáticos</li>
+            <li>• Instalador para Windows 11</li>
+          </ul>
+          <a
+            href="projects/competitor.html"
+            class="inline-block bg-blue-500 text-white px-5 py-2 rounded-md font-semibold hover:bg-blue-600 transition"
+          >
+            Ver detalhes
+          </a>
+        </div>
       </div>
 
-      <div class="card">
-        <div class="badge">
-          <img src="assets/node.svg" alt="node" />node<img
-            src="assets/puppeteer.svg"
-            alt="puppeteer"
-          />puppeteer
+      <!-- Projeto 2 -->
+      <div class="flex flex-col md:flex-row items-start gap-10 mb-20">
+        <div
+          class="w-full md:w-1/2 min-w-[300px] aspect-video overflow-hidden rounded-xl shadow-md bg-black"
+        >
+          <img
+            src="/assets/lives.png"
+            alt="Live Tracker App"
+            class="w-full h-full object-cover"
+          />
         </div>
-        <h2>YouTube Competitors Analyser</h2>
-        <p>
-          Desenvolvi uma aplicação com **Node.js, Puppeteer, csv-writer** e
-          outras bibliotecas que permite descobrir os concorrentes reais de um
-          canal no YouTube. O sistema coleta dados estratégicos de vídeos e
-          canais, como títulos, tags e número de visualizações, e gera uma lista
-          de tags baseada na frequência e performance das mais utilizadas.
-          Possui instalador próprio para Windows 11.
-        </p>
-        <a href="projects/competitor.html" target="_blank">Ver detalhes</a>
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">Live Tracker App</h3>
+          <p class="text-neutral-600 mb-4">
+            Um app que monitora até 20 lives simultâneas no YouTube em tempo
+            real, coleta métricas e alerta quando a live não atinge a meta de
+            50k views em 48h.
+          </p>
+          <ul class="text-sm text-neutral-500 mb-6 space-y-1">
+            <li>• React + TypeScript</li>
+            <li>• Node.js + Express API</li>
+            <li>• Banco de dados local com SQLite</li>
+          </ul>
+          <a
+            href="projects/lives.html"
+            class="inline-block bg-blue-500 text-white px-5 py-2 rounded-md font-semibold hover:bg-blue-600 transition"
+          >
+            Ver detalhes
+          </a>
+        </div>
       </div>
-    </div>
+
+      <!-- Projeto 3 -->
+      <div class="flex flex-col md:flex-row items-start gap-10">
+        <div
+          class="w-full md:w-1/2 min-w-[300px] aspect-video overflow-hidden rounded-xl shadow-md bg-black"
+        >
+          <img
+            src="/assets/prext.png"
+            alt="Premiere Extension"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-2">Premiere Extension</h3>
+          <p class="text-neutral-600 mb-4">
+            Painel personalizado dentro do Adobe Premiere Pro que automatiza 80%
+            do processo de edição de vídeos reused content, reduzindo tempo de
+            15min para 2min por vídeo.
+          </p>
+          <ul class="text-sm text-neutral-500 mb-6 space-y-1">
+            <li>• JavaScript + ExtendScript</li>
+            <li>• Integração com painel CSInterface</li>
+            <li>• Automação de ações repetitivas</li>
+          </ul>
+          <a
+            href="projects/prextension.html"
+            class="inline-block bg-blue-500 text-white px-5 py-2 rounded-md font-semibold hover:bg-blue-600 transition"
+          >
+            Ver detalhes
+          </a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
