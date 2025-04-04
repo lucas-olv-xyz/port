@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 body {
   background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
@@ -25,32 +25,32 @@ h1 {
 }
 
 .card {
-position: relative;
-background: rgba(255, 255, 255, 0.05);
-border-radius: 16px;
-padding: 20px;
-backdrop-filter: blur(12px);
-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .badge {
-position: absolute;
-top: 0;
-right: 0;
-background-color: #818181; /* cor amarela tipo a da imagem */
-color: #000;
-font-size: 12px;
-padding: 6px 12px;
-border-bottom-left-radius: 12px;
-font-weight: bold;
-display: flex;
-align-items: center;
-gap: 6px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #818181; /* cor amarela tipo a da imagem */
+  color: #000;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-bottom-left-radius: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .badge img {
-width: 16px;
-height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
 .card:hover {
@@ -70,4 +70,3 @@ height: 16px;
   text-decoration: none;
   font-weight: bold;
 }
-</style>
