@@ -1,64 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portfólio</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <title>lucas olv xyz</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #111;
+        color: #fff;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 60px;
+        background-color: #111;
+      }
+
+      .logo {
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 1px;
+      }
+
+      nav a {
+        color: #ccc;
+        margin-left: 30px;
+        text-decoration: none;
+        font-size: 15px;
+      }
+
+      nav a:hover {
+        color: #fff;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 60px;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+      }
+
+      .hero-text {
+        max-width: 600px;
+      }
+
+      .hero-text h1 {
+        font-size: 48px;
+        margin: 0 0 20px 0;
+      }
+
+      .hero-text p {
+        font-size: 18px;
+        color: #ccc;
+        line-height: 1.6;
+      }
+
+      .hero-text a {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 12px 28px;
+        background-color: #4c7cf5;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 30px;
+        transition: 0.3s;
+      }
+
+      .hero-text a:hover {
+        background-color: #3a6de0;
+      }
+
+      .hero-image img {
+        width: 300px;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      }
+
+      @media (max-width: 800px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .hero-image {
+          margin-top: 30px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Portfólio de Projetos</h1>
-    <div class="container">
-      <div class="card">
-        <div class="badge">
-          <img src="assets/js-icon.png" alt="JavaScript" />javascript
-        </div>
-        <h2>Extensão para Premiere Pro</h2>
-        <p>
-          Criei uma extensão em JavaScript que automatiza 80% do processo de
-          edição de conteúdo reaproveitado. Reduzi o tempo de edição de 15
-          minutos para 1:40, triplicando a produção de vídeos mensais.
-        </p>
-        <a href="projects/prextension.html">Saiba mais</a>
-      </div>
-      <div class="card">
-        <div class="badge">
-          <img src="assets/react.png" alt="react" />react<img
-            src="assets/typescript.svg"
-            alt="TypeScript"
-          />typescript
-        </div>
-        <h2>App de Monitoramento de Lives</h2>
-        <p>
-          Desenvolvi um aplicativo em Google Apps Script integrado ao Google
-          Sheets que monitora 20 lives simultâneas no YouTube, coleta métricas
-          automáticas e alerta quando uma live não atinge 50k views em 48 horas.
-        </p>
-        <a href="projects/lives.html" target="_blank">Ver detalhes</a>
-      </div>
+    <header>
+      <div class="logo">Lucas-xyz</div>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="projects.html">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
 
-      <div class="card">
-        <div class="badge">
-          <img src="assets/node.svg" alt="node" />node<img
-            src="assets/puppeteer.svg"
-            alt="puppeteer"
-          />puppeteer
-        </div>
-        <h2>YouTube Competitors Analyser</h2>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Oi, eu sou Lucas</h1>
         <p>
-          Desenvolvi uma aplicação com **Node.js, Puppeteer, csv-writer** e
-          outras bibliotecas que permite descobrir os concorrentes reais de um
-          canal no YouTube. O sistema coleta dados estratégicos de vídeos e
-          canais, como títulos, tags e número de visualizações, e gera uma lista
-          de tags baseada na frequência e performance das mais utilizadas.
-          Possui instalador próprio para Windows 11.
+          Desenvolvedor apaixonado por automações, interfaces criativas e
+          ferramentas que facilitam o dia a dia. Crio soluções que otimizam
+          processos e ajudam empresas a produzirem mais com menos esforço.
         </p>
-        <a href="projects/competitor.html" target="_blank">Ver detalhes</a>
+        <a href="projects.html">Meus Projetos</a>
       </div>
-    </div>
+      <div class="hero-image">
+        <img src="/assets/lucas.png" alt="Minha foto ou avatar" />
+      </div>
+    </section>
   </body>
 </html>
